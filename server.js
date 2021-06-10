@@ -6,6 +6,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 app.use(express.static('public'));
 
+// app.engine('hbs', handlebars({
+//     extname: '.hbs',
+//     defaultLayout: 'index.hbs',
+//     layoutsDir: __dirname + '/views/layouts',
+//     partialsDir: __dirname + '/views/partials/'
+// }));
+
+// app.set('view engine', 'hbs');
+
+// app.set('views','./views');
+
 app.use((err, req, res, next) =>{
     console.error(err.message);
     res.status(500).send('Algo se rompió!!');

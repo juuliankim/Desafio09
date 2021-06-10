@@ -52,4 +52,13 @@ router.delete('/productos/borrar/:id',(req,res)=>{
     }
 });
 
+// router.get('/productos/vista', (req, res) => {
+//     if(controller.productos.length > 0) {
+//         Products=true;
+//     }else{
+//         Products=false;
+//     }
+//     res.render('main', { productos: controller.check(), Products});
+// });
+
 module.exports = router;
