@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const controller = require('./api/productos')
+const controller = require('../api/productos')
 
 router.get('/', (req, res) => {
     res.send('Bienvenido al servidor express');
