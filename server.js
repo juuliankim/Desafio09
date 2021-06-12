@@ -22,7 +22,7 @@ app.use((err, req, res, next) =>{
     res.status(500).send('Algo se rompió!!');
 });
 
-const router = require('./routes/productos');
+const router = require('./routes/routes');
 app.use('/api',router);
 
 const PORT = 8080;
